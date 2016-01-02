@@ -1,0 +1,1 @@
+<input type="submit" class="<?php if(isset($class_submit)){echo $class_submit;}else{echo "form-control btn btn-primary";}?>" onclick="this.form.action='<?php echo $url_submit;?>'" value="<?php if(isset($value_submit)){echo $value_submit;}else{echo "Submit";}?>" <?php if(isset($_target_submit) and !empty($_target_submit)){echo "target='".$_target_submit."'";} ?>>
